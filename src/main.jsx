@@ -7,7 +7,7 @@ import {BrowserRouter,Route, Routes} from 'react-router-dom'
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/React_Movie_App">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
