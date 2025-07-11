@@ -1,6 +1,7 @@
 // src/components/MovieDetail.jsx
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Spinner from './spinner';
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -37,7 +38,7 @@ const MovieDetail = () => {
     return <div className="text-center text-red-500 mt-10">{error}</div>;
 
   if (!movie)
-    return <div className="text-center text-white mt-10">Loading movie details...</div>;
+    return <Spinner/> ;
 
   return (
     <section className="min-h-screen w-full bg-primary text-white px-4 py-10">
@@ -50,7 +51,7 @@ const MovieDetail = () => {
             ← Back to Movies
           </button>
         </div>
-
+        
         <div className="flex flex-col md:flex-row gap-10 bg-dark-100 rounded-2xl p-6 shadow-2xl">
           <div className="md:w-1/3">
             <img
