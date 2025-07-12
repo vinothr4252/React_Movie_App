@@ -1,7 +1,8 @@
 # 🎬 Movies App
 
 A modern movie search and details viewer built using **React**, **Vite**, **Tailwind CSS**, and the **TMDB API**.
-
+## 🔗 Live Demo  
+[Click here to view the live demo](https://react-movie-app-olive-omega.vercel.app/)
 ---
 
 ## ✨ Features
